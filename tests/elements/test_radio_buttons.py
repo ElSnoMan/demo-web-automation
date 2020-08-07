@@ -1,7 +1,7 @@
 
 def test_yes_radio_button_shows_yes(py):
     py.visit('https://demoqa.com/radio-button')
-    py.get('#yesRadio').click()
+    py.get('#yesRadio').click(force=True)
     assert py.get('.text-success').should().have_text('Yes')
 
 
