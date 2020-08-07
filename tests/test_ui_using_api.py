@@ -21,7 +21,7 @@ def test_get_deal_with_invalid_id_raised_error():
         get_deal_by_id(0)
 
 
-@pytest.mark.parametrize("deal_id", [1093715, 1093193])
+@pytest.mark.parameterize("deal_id", [1093715, 1093193])
 def test_deal_in_the_UI_matches_deal_from_BE(py, deal_id):
     deal = get_deal_by_id(deal_id)
     deal_price = str(deal['price'])  # => '19.99'
