@@ -17,9 +17,9 @@
   },
 
   "viewport": {
-    "maximize": true,
-    "width": 1440,
-    "height": 900,
+    "maximize": false, 
+    "width": 1920,
+    "height": 1080,
     "orientation": "portrait"
   }
 }

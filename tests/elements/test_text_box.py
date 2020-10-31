@@ -5,6 +5,7 @@ def test_submit_form(py):
     py.get('#userEmail').type('yomomma@example.com')
     py.get('#currentAddress').type('37 South Yo Mommas House')
     py.get('#permanentAddress').type(py.fake.address())
+    py.contains('Submit').click()
     assert py.get('p[id="name"]').should().contain_text('Luca Kidman')
 
 
